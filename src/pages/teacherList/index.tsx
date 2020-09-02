@@ -1,15 +1,13 @@
 import React from 'react';
-
-import PageHeader from '../../components/pageHeader';
+import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 import './styles.css';
 
-import TeacherItem from '../../components/teacherItem';
-
-function TeacherList() {
+export default function TeacherList() {
     return (
         <div id="page-teacher-list" className="container">
-            <PageHeader title="Estes são os proffys disponíveis.">
+            <PageHeader title="Estes são os Proffys disponíveis.">
                 <form id="search-teachers">
                     <div className="input-block">
                         <label htmlFor="subject">Matéria</label>
@@ -32,12 +30,7 @@ function TeacherList() {
                 <TeacherItem />
                 <TeacherItem />
                 <TeacherItem />
-                <TeacherItem />
-                <TeacherItem />
-                <TeacherItem />
             </main>
         </div>
     )
 }
-
-export default TeacherList;

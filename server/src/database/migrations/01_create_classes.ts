@@ -12,9 +12,9 @@ export async function up(knex: Knex) {
             .inTable('users')
             .onUpdate('CASCADE')
             .onDelete('CASCADE');
-    });
-}
+    })
+};
 
 export async function down(knex: Knex) {
     return knex.schema.dropTable('classes');
-}
+};

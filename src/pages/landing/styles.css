@@ -14,7 +14,7 @@
     height: 10rem;
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
 }
 
@@ -40,7 +40,7 @@
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
-    font: 700 2rem Archivo;
+    font: 700 2.0rem Archivo;
     
     display: flex;
     align-items: center;
@@ -65,12 +65,12 @@
     background: var(--color-primary-lighter);
 }
 
-.buttons-container a.give-classes {
-    background: var(--color-secondary);
-}
-
 .buttons-container a.study:hover {
     background: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes {
+    background: var(--color-secondary);
 }
 
 .buttons-container a.give-classes:hover {
@@ -94,11 +94,12 @@
         max-width: 1100px;
 
         display: grid;
-        grid-template-rows: 350px 1fr;
+        grid-template-rows: 35rem 1fr;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
-            "logo hero hero"
-            "buttons buttons total" ;
+        "logo hero hero"
+        "buttons buttons total"
+        ;
     }
 
     .logo-container {
@@ -107,19 +108,19 @@
         margin: 0;
         text-align: left;
     }
-    
-    .hero-image{
-        grid-area: hero;
-        justify-self: end;
-    }
 
     .logo-container h2 {
         text-align: initial;
         font-size: 3.6rem;
     }
 
-    .logo-container img{
+    .logo-container img {
         height: 100%;
+    }
+
+    .hero-image {
+        grid-area: hero;
+        justify-self: end;
     }
 
     .buttons-container {
@@ -127,7 +128,7 @@
         justify-content: flex-start;
     }
 
-    .buttons-container a{
+    .buttons-container a {
         font-size: 2.4rem;
     }
 
@@ -135,5 +136,4 @@
         grid-area: total;
         justify-self: end;
     }
-
 }
